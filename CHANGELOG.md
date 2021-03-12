@@ -1,3 +1,15 @@
+# v0.1.2 (Fri Mar 12 2021)
+
+#### ⚠️ Pushed to `main`
+
+- Update Avatar.stories.mdx ([@jonniebigodes](https://github.com/jonniebigodes))
+
+#### Authors: 1
+
+- [@jonniebigodes](https://github.com/jonniebigodes)
+
+---
+
 # v0.1.1 (Fri Mar 12 2021)
 
 #### ⚠️ Pushed to `main`
