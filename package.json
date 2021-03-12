@@ -1,7 +1,7 @@
 {
-  "name": "learnstorybook-design-system-template",
+  "name": "@jonniebigodes/learnstorybook-design-system-with-template",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -15,12 +15,22 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs"
+  },
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +51,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.10",
     "@storybook/addon-a11y": "^6.1.21",
     "@storybook/addon-actions": "^6.1.21",
     "@storybook/addon-essentials": "^6.1.21",
@@ -48,7 +59,14 @@
     "@storybook/node-logger": "^6.1.21",
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.1.21",
+    "auto": "^10.18.7",
     "chromatic": "^5.7.0",
+    "cross-env": "^7.0.3",
     "prettier": "^2.2.1"
-  }
+  },
+  "description": "Storybook design systems tutorial",
+  "main": "dist/index.js",
+  "repository": "https://github.com/jonniebigodes/design-systems-with-a-template.git",
+  "author": "jonniebigodes <joaocontadesenvolvimento@gmail.com>",
+  "license": "MIT"
 }
