@@ -1,3 +1,15 @@
+# v0.1.4 (Mon Mar 15 2021)
+
+#### ⚠️ Pushed to `main`
+
+- http server for production builds (normal and docs) ([@jonniebigodes](https://github.com/jonniebigodes))
+
+#### Authors: 1
+
+- [@jonniebigodes](https://github.com/jonniebigodes)
+
+---
+
 # v0.1.3 (Mon Mar 15 2021)
 
 #### ⚠️ Pushed to `main`
