@@ -21,7 +21,8 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs",
-    "release": "auto shipit --base-branch=main"
+    "release": "auto shipit --base-branch=main",
+    "serve-prod": "http-server ./storybook-static"
   },
   "babel": {
     "presets": [
@@ -63,6 +64,7 @@
     "auto": "^10.18.7",
     "chromatic": "^5.7.0",
     "cross-env": "^7.0.3",
+    "http-server": "^0.12.3",
     "prettier": "^2.2.1"
   },
   "description": "Storybook design systems tutorial",
